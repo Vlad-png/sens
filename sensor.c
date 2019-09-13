@@ -50,13 +50,6 @@ signed char incod(unsigned int *mass)
 	else if(index_max == FIRST)
 		j = SENS - 1;
 
-// 	uart_send_str("SLE");
-// 	uart_send_int(i);
-// 	uart_send_str("Pred");
-// 	uart_send_int(j);
-// 	uart_send_str("q");
-// 	uart_send_int(index_max);	
-		
 	if(index_max != old && mass[index_max] > mass[i] && mass[i] > BORDER)
 	{
 		old = index_max;
